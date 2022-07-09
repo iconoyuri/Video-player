@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <div class="container">
+            <div class="showcase">
+                <div class="btn-container" onclick="document.querySelector('.showcase').classList.toggle('hidden')">
+                    <button class="show-hide-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+                <div class="videos">
+                    <div class="thumbnail paused">
+                        <img src="assets/tenki_no_img.jpg" alt="image" data-vid-src="assets/videos/tenki_no_vid.mp4">
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="thumbnail paused">
+                        <img src="assets/all_might.jpg" alt="image" data-vid-src="assets/videos/all_might.mp4">
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="thumbnail paused">
+                        <img src="assets/deku.jpg" alt="image" data-vid-src="assets/videos/deku.mp4">
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="thumbnail paused">
+                        <img src="assets/kiriee.jpg" alt="image" data-vid-src="assets/videos/kiriee.mp4">
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="thumbnail paused">
+                        <img src="assets/jjk.jpg" alt="image" data-vid-src="assets/videos/jjk.mp4">
+                        <i class="fas fa-play"></i>
+                        <i class="fas fa-pause"></i>
+                    </div>                    
+                </div>
+            </div>
+            <div class="video-container">
+                <video controls id="video-element"></video>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
